@@ -15,4 +15,3 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('hello','HelloController@index')->name('hello');
-Route::post('hello','HelloController@post')->name('post');
