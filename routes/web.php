@@ -14,5 +14,9 @@
 use App\Http\Middleware\HelloMiddleware; 
 
 Route::get('hello','HelloController@index')->name('hello');
-
-
+Route::get('hello/add','HelloController@add')->name('add');
+Route::post('hello/add','HelloController@create')->name('create');
+Route::get('hello/edit','HelloController@edit')->name('edit');
+Route::post('hello/edit','HelloController@update')->name('update');
+Route::get('hello/del','HelloController@del')->name('del');
+Route::post('hello/del','HelloController@remove')->name('remove');
