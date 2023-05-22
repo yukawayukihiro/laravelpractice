@@ -20,3 +20,4 @@ Route::get('hello/edit','HelloController@edit')->name('edit');
 Route::post('hello/edit','HelloController@update')->name('update');
 Route::get('hello/del','HelloController@del')->name('del');
 Route::post('hello/del','HelloController@remove')->name('remove');
+Route::get('hello/show','HelloController@show')->name('show');
